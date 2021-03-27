@@ -1,0 +1,5 @@
+package com.newray.student.entity;
+
+public class Studentinfo {
+
+}

@@ -1,0 +1,15 @@
+package com.newray.student.entity;
+
+import java.io.Serializable;
+
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Studentinfo implements Serializable{
+	@Id
+	@Generated
+	
+
+}

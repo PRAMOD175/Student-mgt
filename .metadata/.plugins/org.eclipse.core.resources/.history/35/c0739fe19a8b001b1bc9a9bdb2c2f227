@@ -1,0 +1,30 @@
+package com.newray.greeting.dao;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.newray.greeting.controller.StudentDetails;
+
+public class Printdetails
+{
+	
+	private String classname;
+	
+
+	public List<String> Print(String classname, Object lista)
+	{
+		this.classname=classname;
+	
+	for(StudentDetails c:lista)
+    {
+   	 
+	if(c.classnam.equals(classname))
+   	 {
+   		return c.subjectname; 
+   		
+   	 }
+    }
+
+}
+}

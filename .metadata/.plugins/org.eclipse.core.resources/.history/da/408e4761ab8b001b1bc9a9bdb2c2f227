@@ -1,0 +1,5 @@
+package com.newray.greeting.model;
+
+public class Student {
+
+}

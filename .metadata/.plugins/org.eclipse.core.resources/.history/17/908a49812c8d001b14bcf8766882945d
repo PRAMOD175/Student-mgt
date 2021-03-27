@@ -1,0 +1,25 @@
+package com.newray.student.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.newray.student.model.Student;
+import com.newray.student.model.StudentDetails;
+@RestController
+public class StudentControler {
+	@GetMapping(value="/getStudentdetailjson")
+	public Student getStudent()
+	{
+		return new Student();
+	}
+	@RequestMapping(value="/getStudentdetails",method =RequestMethod.POST)
+	public Student getStudent(@RequestBody Student detail)
+	{
+		return detail;
+	}
+	
+
+}

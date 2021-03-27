@@ -1,0 +1,32 @@
+package com.newray.student;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.newray.model.Student;
+
+@SpringBootApplication
+public class StudentApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(StudentApplication.class, args);
+		Student Stuobj=new Student();
+		   List<String> subList = new ArrayList<String>();
+		  
+		     Stuobj.setSubjectname(subList);
+		     Stuobj.setSubid(101);
+		     Stuobj.setClassnam("mca");
+		     Student Stuobj1=new Student();  
+		     subList = new ArrayList<String>();
+		
+		     Stuobj1.setSubjectname(subList);
+		     Stuobj1.setSubid(101);
+		     Stuobj1.setClassnam("mca");
+		     
+		     
+	}
+
+}

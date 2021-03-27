@@ -1,0 +1,5 @@
+package com.newray.student.repository;
+
+public interface StudentdetailRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.newray.model;
+
+public class StudentDetails {
+
+}

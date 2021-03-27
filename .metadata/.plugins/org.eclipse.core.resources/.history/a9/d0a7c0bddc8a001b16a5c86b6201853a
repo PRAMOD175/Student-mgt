@@ -1,0 +1,23 @@
+package com.example.demo;
+
+public class StudentDetails {
+	
+
+
+		public int id;
+		public String name;
+		public String classname;
+		public String fathername;
+		  StudentDetails()
+		  {
+//			  this.id=id;
+//			  this.name=name;
+//			  this.classname=classname;
+//			  this.fathername=fathername;	  
+		  }
+		  
+		  
+		   
+
+	}
+

@@ -1,0 +1,44 @@
+package com.newray.student;
+
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+import com.newray.student.model.Student;
+@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, SecurityAutoConfiguration.class})
+@SpringBootApplication
+@ComponentScan("module-service")
+public class StudentApplication extends SpringBootServletInitializer {
+
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(WebServiceApplication.class);
+    }
+public class StudentApplication {
+
+	public void main(String[] args) {
+		SpringApplication.run(StudentApplication.class, args);
+//		Student Stuobj=new Student();
+//		   List<String> subList = new ArrayList<String>();
+//		     subList.add("angular");
+//		     subList.add("Java");
+//		     Stuobj.setSubjectname(subList);
+//		     Stuobj.setSubid(101);
+//		     Stuobj.setClassnam("mca");
+//		 
+//		     Student Stuobj1=new Student();  
+//		     subList = new ArrayList<String>();
+//		     subList.add("c#");
+//		     subList.add("operating system");
+//		     Stuobj1.setSubjectname(subList);
+//		     Stuobj1.setSubid(101);
+//		     Stuobj1.setClassnam("mca");
+	}
+
+}
